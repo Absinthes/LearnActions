@@ -27,5 +27,6 @@ jobs:
           host: ${{ secrets.ALIYUN_SERVER_HOST }}
           usename: ${{ secrets.ALIYUN_REMOTE_USER }}
           password: ${{ secrets.ALIYUN_SERVER_PASSWORD }}
+          port: 22
           source: 'dist/'
           target: ${{ secrets.ALIYUN_TARGET }}
