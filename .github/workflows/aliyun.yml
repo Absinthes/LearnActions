@@ -9,12 +9,12 @@ jobs:
     steps:
       # 切换分支
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       # 使用 根据自己的情况选择node版本，这里用node:15
       - name: use Node.js 14
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.5.1
         with:
-          node-version: 14
+          node-version: "14.X"
       # npm install and build
       - name: npm install and build
         run: |
